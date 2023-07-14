@@ -1,0 +1,103 @@
+.container {
+    @media (max-width: #{$screen-sm-min}) {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+}
+.home {
+
+    &__banner_container {
+        position: relative;
+        font-family: 'Roboto';
+        color: white;
+        background-color: pink;
+        img {
+            z-index:-1;
+            width: 100%;
+            border-radius: 1.5em;
+        }
+
+        @media (max-width: #{$screen-sm-min}) {
+            width: 100%;
+
+            img {
+                border-radius: 0;
+            }
+        }
+    }
+
+    &__banner_description {
+        bottom: 10px;
+        left: 10px;
+        width: 70%;
+        position: absolute;
+
+        // Small devices
+        @media (max-width: #{$screen-sm-min}) {
+            h1 {
+                font-size: 1em;
+            }
+        }
+    }
+}
+
+.item {
+    box-shadow: 1px 1px 14px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 1px 14px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 14px -1px rgba(0,0,0,0.75);
+    margin: 30px 10px;
+    border-radius: 1.5em;
+
+    &__name {
+        font-weight: bold;
+        font-size: 1.1em;
+    }
+
+    &__description {
+        font-size: .9em;
+        color: white;
+        background-color: #E880B7;
+        padding: 5px;
+        border-radius: .5em;
+    }
+
+    &__price {
+        margin-top: 20px;
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    &__details {
+        padding: 30px;
+    }
+
+    .image_container {
+        display: flex;
+        justify-content: center;
+        background-color: #DAEBE9;
+        width: 100%;
+        border-radius: 1.5em 1.5em 0 0;
+        padding: 30px 10px;
+    }
+    img {
+        max-height: 150px;
+        max-width: 100%;
+    }
+
+    button {
+        background: rgb(117,204,165);
+        background: linear-gradient(90deg, rgba(117,204,165,1) 0%, rgba(24,197,191,1) 100%);
+        color: white;
+        border-radius: 1.5em;
+        font-weight: bold;
+        border: none;
+        font-size: 1em;
+        padding: .5em 3em;
+        margin-bottom: 20px;
+        &:hover {
+            background: rgb(83,143,116);
+            background: linear-gradient(90deg, rgba(83,143,116,1) 0%, rgba(37,147,140,1) 100%);
+        }
+    }
+}

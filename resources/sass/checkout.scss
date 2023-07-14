@@ -1,0 +1,50 @@
+.gcash {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    &__container {
+        border-radius: 1.5em;
+        border: black solid 1px;
+    }
+
+    &__header {
+        border-radius: 1.5em 1.5em 0 0;
+        padding: 20px;
+        background-color: rgb(216, 216, 216);
+        h1 {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            color: rgb(87, 87, 87);
+        }
+    }
+
+    &__body {
+        padding: 20px;
+        text-align: center;
+
+        h1 {
+            font-size: 1.2em;
+        }
+    }
+
+    &__footer {
+        text-align: center;
+        padding: 20px;
+        button {
+            background-color: #0848CD;
+            color: white;
+            border-radius: 1.5em;
+            font-weight: bold;
+            border: none;
+            font-size: 1.2em;
+            padding: .4em 6em;
+    
+            &:hover {
+                background-color: #9BC2F2;
+            }
+        }
+    }
+}   

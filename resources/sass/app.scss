@@ -1,0 +1,21 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+// Variables
+@import 'variables';
+@import 'breakpoints';
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+@import 'header';
+@import 'home';
+@import 'sign_in';
+@import 'sign_up';
+@import 'item';
+@import 'cart';
+@import 'checkout';
+
+hr {
+    width: 80%;
+}

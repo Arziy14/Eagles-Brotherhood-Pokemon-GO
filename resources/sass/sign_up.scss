@@ -1,0 +1,33 @@
+.sign_up {
+    
+    .form-group {
+        margin: 20px 0;
+    }
+
+    button {
+        margin-bottom: 20px;
+        background: rgb(117,204,165);
+        background: linear-gradient(90deg, rgba(117,204,165,1) 0%, rgba(24,197,191,1) 100%);
+        color: white;
+        border-radius: 1.5em;
+        font-weight: bold;
+        border: none;
+        font-size: 1.2em;
+        padding: .7em 3em;
+
+        &:hover {
+            background: rgb(83,143,116);
+            background: linear-gradient(90deg, rgba(83,143,116,1) 0%, rgba(37,147,140,1) 100%);
+        }
+
+        // Small devices
+        @media (max-width: #{$screen-sm-min}) {
+            width: 100%;
+        }
+    }
+
+    &__register_container {
+        display: flex;
+        justify-content: center;
+    }
+}

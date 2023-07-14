@@ -1,0 +1,122 @@
+.item_title {
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.level_container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    
+    h1, h2 {
+        font-family: 'Roboto';
+        font-size: 1.2em;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    img {
+        max-height: 25px;
+    }
+}
+
+.item_purchase {
+    box-shadow: 1px 1px 14px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 1px 14px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 14px -1px rgba(0,0,0,0.75);
+    background: rgb(255,255,254);
+    background: linear-gradient(90deg, rgba(255,255,254,1) 0%, rgba(249,255,241,1) 100%);
+    margin: 30px 10px;
+    border-radius: 1.5em;
+
+    &__name {
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+
+    &__description {
+        font-size: .9em;
+        color: white;
+        background-color: #E880B7;
+        padding: 5px;
+        border-radius: .5em;
+    }
+
+    &__price {
+        margin-top: 20px;
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image_container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        border-radius: 1.5em 1.5em 0 0;
+        padding: 30px 10px;
+    }
+    img {
+        max-height: 150px;
+        max-width: 100%;
+    }
+
+}
+
+.button_container {
+
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+
+    &__right_button {
+        background: rgb(117,204,165);
+        background: linear-gradient(90deg, rgba(117,204,165,1) 0%, rgba(24,197,191,1) 100%);
+        color: white;
+        border-radius: 1.5em;
+        font-weight: bold;
+        border: none;
+        font-size: 1em;
+        padding: .7em 2em;
+        margin-bottom: 20px;
+        &:hover {
+            background: rgb(83,143,116);
+            background: linear-gradient(90deg, rgba(83,143,116,1) 0%, rgba(37,147,140,1) 100%);
+        }
+    }
+
+    &__left_button {
+        color: black;
+        border-radius: 1.5em;
+        background-color: transparent;
+        border: 1px solid black !important;
+        font-weight: bold;
+        border: none;
+        font-size: 1em;
+        padding: .7em 2em;
+        margin-bottom: 20px;
+        transition: all .2s ease-in-out;
+        &:hover {
+            background-color: #D0F0F5;
+        }
+    }
+
+    // Small devices
+    @media (max-width: #{$screen-sm-min}) {
+        button {
+            font-size: .9em;
+        }
+    }
+}
